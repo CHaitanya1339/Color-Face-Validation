@@ -23,11 +23,11 @@ def process_image_and_check_color(img_url, target_color_bgr, threshold_percentag
     target_pixels = np.sum(final_mask > 0)
     percentage = (target_pixels / total_pixels) * 100
 
-    print(f"Percentage of target color in the image: {percentage:.2f}%")
+    
     if percentage > threshold_percentage:
-        print("The target color is present in more than 30% of the image.")
+        return True
     else:
-        print("The target color is not present in more than 30% of the image.")
+        return False
 
 
 
