@@ -1,0 +1,7 @@
+Pillow>=8.0.0  # Used for image manipulation in SegCloth.py and color_detection.py
+numpy>=1.19.0  # Used for numerical operations in SegCloth.py and color_detection.py
+opencv-python>=4.5.0  # Used for image processing in color_detection.py
+transformers>=4.0.0  # Used for the segmentation model in SegCloth.py
+deepface>=0.0.68  # Used for face verification in face_verification_script.py
+requests>=2.25.1  # Used for making HTTP requests in app.py
+Flask>=3.0.3  # Used for creating the web server in app.py

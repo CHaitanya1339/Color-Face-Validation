@@ -35,6 +35,7 @@ This application performs image processing tasks including face verification, co
   - transformers
   - deepface
   - requests
+  - Flask
 
 ## Installation
 
@@ -53,6 +54,20 @@ Run the application by executing the `app.py` script:
 
 python app.py
 
+Open the Flask server in your browser by running the `app.py` script.
 
-This will automatically download the images, perform face verification, and check for specific color presence in the clothing of the images.
+Go to the below mentioned URL:
 
+http://127.0.0.1:5000/process_images - POST
+
+Make sure you have headers as `Content-Type: application/json`
+
+Add your payload in body by selecting Raw and JSON in Headers section.
+
+Reference Payload:
+
+{
+    "img1_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Anushka_Sharma_promoting_Zero.jpg/220px-Anushka_Sharma_promoting_Zero.jpg",
+    "img2_url": "https://1847884116.rsc.cdn77.org/hindi/gallery/actress/anushkasharma/nushkasharma281019_4.jpg",
+    "color_rgb": [0, 0, 0]
+}
